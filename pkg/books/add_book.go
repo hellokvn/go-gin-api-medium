@@ -16,6 +16,7 @@ type AddBookRequestBody struct {
 func (h handler) AddBook(c *gin.Context) {
 	body := AddBookRequestBody{}
 
+	// getting request's body
 	if err := c.BindJSON(&body); err != nil {
 		c.AbortWithError(http.StatusBadRequest, err)
 		return
@@ -32,5 +33,5 @@ func (h handler) AddBook(c *gin.Context) {
 		return
 	}
 
-	c.JSON(http.StatusOK, &book)
+	c.JSON(http.StatusCreated, &book)
 }

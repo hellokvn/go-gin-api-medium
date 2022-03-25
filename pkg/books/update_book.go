@@ -17,6 +17,7 @@ func (h handler) UpdateBook(c *gin.Context) {
 	id := c.Param("id")
 	body := UpdateBookRequestBody{}
 
+	// getting request's body
 	if err := c.BindJSON(&body); err != nil {
 		c.AbortWithError(http.StatusBadRequest, err)
 		return
