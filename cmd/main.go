@@ -2,8 +2,8 @@ package main
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/hellokvn/go-api-medium/pkg/books"
-	"github.com/hellokvn/go-api-medium/pkg/common/db"
+	"github.com/hellokvn/go-gin-api-medium/pkg/books"
+	"github.com/hellokvn/go-gin-api-medium/pkg/common/db"
 	"github.com/spf13/viper"
 )
 

@@ -4,7 +4,7 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	"github.com/hellokvn/go-api-medium/pkg/common/models"
+	"github.com/hellokvn/go-gin-api-medium/pkg/common/models"
 )
 
 type UpdateBookRequestBody struct {

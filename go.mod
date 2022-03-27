@@ -1,4 +1,4 @@
-module github.com/hellokvn/go-api-medium
+module github.com/hellokvn/go-gin-api-medium
 
 go 1.18
 
